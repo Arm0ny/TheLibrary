@@ -1,0 +1,20 @@
+.searchbar{
+    background-color: white;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+#search-field{
+    width: 90%;
+    border: none;
+}
+
+#search-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #5957B1;
+    border: none;
+}

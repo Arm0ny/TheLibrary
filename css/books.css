@@ -1,0 +1,36 @@
+#books-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.book-card{
+    height: 15rem;
+    max-height: 20rem;
+    width: 30rem;
+    padding: 3rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow-y: scroll;
+    box-shadow: 7px 16px 19px -3px rgba(0,0,0,0.15);
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.book-card::-webkit-scrollbar {
+    display: none;
+}
+
+.book-author{
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+.book-description{
+    font-weight: 300;
+}
+

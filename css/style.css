@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+@import url('books.css');
+@import url('searchbar.css');
+@import url('modifyers.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, 'sans-serif';
+}
+
+
+body{
+    background: rgb(150,190,227);
+    background: linear-gradient(90deg, rgba(150,190,227,1) 0%, rgba(221,234,246,1) 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+#welcome{
+    color: white;
+}
+
+@media screen and (max-width: 580px){
+    .main{
+        padding: 1rem;
+    }
+}
+

@@ -1,0 +1,15 @@
+#search-field:focus{
+    outline: none;
+    border-bottom: 1px solid #5957B1;
+}
+
+#search-btn:hover{
+    background-color: #36346b;
+}
+
+.book-card:hover{
+    cursor: pointer;
+    background-color: #e7e7e7;
+    transition: background-color;
+    transition-duration: 200ms;
+}
