@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center" id="readme-top">
-  <a href="https://github.com/Arm0ny/Books">
+  <a href="https://github.com/Arm0ny/TheLibrary">
     <img src="img/screenshots/banner.png" alt="Logo" width="500" height="250">
   </a>
 
@@ -20,8 +20,8 @@
   <p align="center">
     simple and usefully website you can use to retrieve usefully information about some books
     <br/>
-    <a href="https://github.com/Arm0ny/Books/issues">Report Bug</a>
-    <a href="https://github.com/Arm0ny/Books/issues">Request Feature</a>
+    <a href="https://github.com/Arm0ny/TheLibrary/issues">Report Bug</a>
+    <a href="https://github.com/Arm0ny/TheLibrary/issues">Request Feature</a>
   </p>
 </div>
 
@@ -74,6 +74,8 @@ the book's authors and title, you can also click on each one to get the descript
 
 
 * ![javascript][javascript_img]
+* ![Webpack][webpack_img]
+* ![NPM][NPM_url]
 * ![html_img][html_img]
 * ![css_img][css_img]
 
@@ -96,16 +98,21 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-this is a vanilla javascript project, so you won't need anything else then a browser to run it
-
+this project requires npm click <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm"> here </a> to see the installation guide
 </section>
 
 <section id="installation">
 
 ### Installation
+
+first clone the repository with the command below
    ```sh
-   git clone https://github.com/Arm0ny/Books.git
+   git clone https://github.com/Arm0ny/TheLibrary.git
    ```
+then enter in the directory that you just cloned using
+```
+cd TheLibrary/
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 </section>
@@ -151,7 +158,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - adding link to the OpenLibrary's page of the book
 
 
-See the [open issues](https://github.com/Arm0ny/Books/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Arm0ny/TheLibrary/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,7 +202,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - armando.pagano2001@gmail.com
 
-Project Link: [https://github.com/Arm0ny/Books](https://github.com/Arm0ny/Books)
+Project Link: [https://github.com/Arm0ny/TheLibrary](https://github.com/Arm0ny/TheLibrary)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -216,11 +223,11 @@ Project Link: [https://github.com/Arm0ny/Books](https://github.com/Arm0ny/Books)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [stars-shield]: https://img.shields.io/github/stars/Arm0ny/Books.svg?style=for-the-badge
-[stars-url]: https://github.com/Arm0ny/Books/stargazers
+[stars-url]: https://github.com/Arm0ny/TheLibrary/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Arm0ny/Books.svg?style=for-the-badge
 [issues-url]: https://github.com/github_username/repo_name/issues
 [license-shield]: https://img.shields.io/github/license/Arm0ny/Books.svg?style=for-the-badge
-[license-url]: https://github.com/Arm0ny/Books/blob/master/LICENSE.txt
+[license-url]: https://github.com/Arm0ny/TheLibrary/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/armando-pagano-67787916a
 [product-screenshot]: img/screenshots/Library_screenshot.png
@@ -241,6 +248,8 @@ Project Link: [https://github.com/Arm0ny/Books](https://github.com/Arm0ny/Books)
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
 [javascript_img]: https://img.shields.io/badge/-javascript-black?style=for-the-badge&logo=javascript
+[webpack_img]: https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black
+[NPM_url]: https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white
 [html_img]: https://img.shields.io/badge/-HTML5-DD0031?style=for-the-badge&logo=html5
 [css_img]: https://img.shields.io/badge/-CSS3-0769AD?style=for-the-badge&logo=css3
 
