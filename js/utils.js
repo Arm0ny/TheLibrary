@@ -1,3 +1,5 @@
+const lodash = require('lodash')
+
 const LIBRARY = async (subject) => {
     const response = await fetch(`https://openlibrary.org/subjects/${subject}.json?`);
     return await response.json();
@@ -6,10 +8,18 @@ const LIBRARY = async (subject) => {
 
 
 function getAuthorsArray(book){
-    return book.authors.reduce((authorNames, author) => {
-        authorNames.push(author.name)
-        return (authorNames)
-    }, [])
+    let authorsObj = lodash.get(book, 'authors', '')
+    let authorsArr
+    {
+        authorsObj ?
+        authorsArr = authorsObj.reduce((authorNames, author) => {
+            authorNames.push(author.name)
+            return (authorNames)
+        }, [])
+    :
+        authorsArr = ['No author Found']
+    }
+    return authorsArr
 }
 
 async function getDescriptionNode(key) {
@@ -20,25 +30,28 @@ async function getDescriptionNode(key) {
     let descriptionElem = document.createElement('p')
     descriptionElem.id = 'description' + key
     descriptionElem.classList.add('book-description')
-    try {
-        descriptionElem.textContent = bookData.description.value ? bookData.description.value : bookData.description
-    } catch (e) {
-        descriptionElem.textContent = 'No description was found'
-    }
+
+    descriptionElem.textContent = lodash.get(bookData, 'description.value',
+        lodash.get(bookData, 'description', 'Not Found'))
     return descriptionElem
 }
 
 function mapToList(LIBRARY){
-    const booksArray = LIBRARY.works;
-    return booksArray.map((book) => {
-            let {title, key} = book;
-            let authors = getAuthorsArray(book)
-            return `<li class="book-card" id=${key}>
-                    <h2 class="book-title">${title}</h2>
+    const booksArray = lodash.get(LIBRARY, 'works', '');
+    try {
+        return booksArray.map((book) => {
+                let {title, key} = book;
+                let authors = getAuthorsArray(book)
+                return `<li class="book-card" id=${lodash.get(book, 'key', '')}>
+                    <h2 class="book-title">${lodash.get(book, 'title', 'Title not found')}</h2>
                     <p class="book-author">${authors}</p>
                 </li>`
-        }
-    ).join('')
+            }
+        ).join('')
+    }catch (e){
+        console.log(e)
+        return 'No Books were found for the specified subject'
+    }
 }
 
 

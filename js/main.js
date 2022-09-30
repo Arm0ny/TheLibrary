@@ -1,4 +1,5 @@
 import {LIBRARY, getDescriptionNode, mapToList} from "./utils.js";
+import "../css/style.css"
 
 let searchField = document.getElementById('search-field')
 let searchForm = document.getElementById('search-form')

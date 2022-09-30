@@ -13,7 +13,7 @@ module.exports = {
         clean: true,
     },
     optimization: {
-        minimizer: [new OptimizeCssPlugin()]//, new TerserPlugin()]
+        minimizer: [new OptimizeCssPlugin(), new TerserPlugin()]
     },
     plugins: [
         new HtmlWebpackPlugin({
