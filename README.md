@@ -225,7 +225,7 @@ Project Link: [https://github.com/Arm0ny/TheLibrary](https://github.com/Arm0ny/T
 [stars-shield]: https://img.shields.io/github/stars/Arm0ny/Books.svg?style=for-the-badge
 [stars-url]: https://github.com/Arm0ny/TheLibrary/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Arm0ny/Books.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
+[issues-url]: https://github.com/Arm0ny/TheLibrary/issues
 [license-shield]: https://img.shields.io/github/license/Arm0ny/Books.svg?style=for-the-badge
 [license-url]: https://github.com/Arm0ny/TheLibrary/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
