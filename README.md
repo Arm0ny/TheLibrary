@@ -19,6 +19,10 @@
 
   <p align="center">
     simple and usefully website you can use to retrieve usefully information about some books
+<br/>
+
+<a href="https://the-library-2ffa8.web.app">Try It Out</a>
+<br/>
     <br/>
     <a href="https://github.com/Arm0ny/TheLibrary/issues">Report Bug</a>
     <a href="https://github.com/Arm0ny/TheLibrary/issues">Request Feature</a>
@@ -105,14 +109,27 @@ this project requires npm click <a href="https://docs.npmjs.com/downloading-and-
 
 ### Installation
 
-first clone the repository with the command below
+1. clone the repository with the command below
    ```sh
    git clone https://github.com/Arm0ny/TheLibrary.git
    ```
-then enter in the directory that you just cloned using
-```
-cd TheLibrary/
-```
+2. enter in the directory that you just cloned using
+   ```
+   cd TheLibrary/
+   ```
+3. run the following to install dependencies
+   ```
+   npm install
+   ```
+4. start the project by running
+   ```
+   npm start
+   ```
+5. Finally open the `ìndex.html` file located at
+   ```
+   TheLibrary/dist/index.html
+   ```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 </section>
